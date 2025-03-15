@@ -29,6 +29,10 @@ namespace MvcCV.Controllers
         {
             var yetenekler = db.TblYeteneklerim.ToList();
             return PartialView(yetenekler);
+        }public PartialViewResult Hobilerim()
+        {
+            var hobiler = db.TblHobilerim.ToList();
+            return PartialView(hobiler);
         }
     }
 }
