@@ -38,5 +38,17 @@ namespace MvcCV.Controllers
             var sertifika = db.TblSertifikalarım.ToList();
             return PartialView(sertifika);
         }
+        [HttpGet]
+        public PartialViewResult Iletisim()
+        {
+            return PartialView();
+        }
+        [HttpPost]
+        public PartialViewResult Iletisim(TblIletisim t)
+        {
+            db.TblIletisim.Add(t);
+            db.SaveChanges();
+            return PartialView();
+        }
     }
 }
