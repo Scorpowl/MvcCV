@@ -1,0 +1,43 @@
+## Build Results
+bin/
+obj/
+*.log
+
+## User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vs/
+
+## Web Publish
+*.Publish.xml
+*.pubxml
+*.publishproj
+
+## ASP.NET Stuff
+App_Data/
+packages/
+
+## Resharper
+_ReSharper*/
+*.DotSettings.user
+
+## IIS Express
+.vs/
+*.iis*
+
+## Rider
+.idea/
+
+## NuGet
+project.lock.json
+project.fragment.lock.json
+*.nupkg
+.nuget/
+
+## Backup & temp
+*.tmp
+*.bak
+*.old
+*.orig
