@@ -5,13 +5,14 @@ using System.Web;
 using System.Web.Mvc;
 using MvcCV.Models.Entity;
 
+
 namespace MvcCV.Controllers
     
 {
     public class DefaultController : Controller
     {
         // GET: Default
-        DbCvEntities db = new DbCvEntities();
+        MvcCvEntities db = new MvcCvEntities();
         public ActionResult Index()
         {
             var degerler = db.TblHakkimda.ToList();
@@ -35,7 +36,7 @@ namespace MvcCV.Controllers
             return PartialView(hobiler);
         }public PartialViewResult Sertifikalar()
         {
-            var sertifika = db.TblSertifikalarım.ToList();
+            var sertifika = db.TblSertifikalarim.ToList();
             return PartialView(sertifika);
         }
         [HttpGet]

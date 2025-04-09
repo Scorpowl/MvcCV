@@ -7,16 +7,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MvcCV.Models.Entity
+namespace MvcCV
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    
-    public partial class DbCvEntities : DbContext
+    using MvcCV.Models.Entity;
+
+
+    public partial class MvcCvEntities : DbContext
     {
-        public DbCvEntities()
-            : base("name=DbCvEntities")
+        public MvcCvEntities()
+            : base("name=MvcCvEntities")
         {
         }
     
@@ -31,7 +33,7 @@ namespace MvcCV.Models.Entity
         public virtual DbSet<TblHakkimda> TblHakkimda { get; set; }
         public virtual DbSet<TblHobilerim> TblHobilerim { get; set; }
         public virtual DbSet<TblIletisim> TblIletisim { get; set; }
-        public virtual DbSet<TblSertifikalarım> TblSertifikalarım { get; set; }
+        public virtual DbSet<TblSertifikalarim> TblSertifikalarim { get; set; }
         public virtual DbSet<TblYeteneklerim> TblYeteneklerim { get; set; }
     }
 }
